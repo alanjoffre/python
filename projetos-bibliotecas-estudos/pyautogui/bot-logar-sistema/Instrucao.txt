@@ -1,0 +1,46 @@
+# Instale o Jupiter Notebook
+# Youtube possui procedimento de instalação: 
+# https://www.youtube.com/watch?v=_eK0z5QbpKA&ab_channel=HashtagPrograma%C3%A7%C3%A3o
+
+# Abra o prompt do Anaconda PowerShell
+
+# Procedimento PyAutoGui
+# Procedimento para automatizar tarefas no PC
+# Instale a biblioteca PyAutoGui no prompt do Anaconda PowerShell
+pip install pyautogui
+
+# Abra o programa Jupiter Notebook
+
+# Clique no botão NEW, ao lado do botão UPLOAD
+# Na nova janela do Jypyter Notebook digite:
+
+import pyautogui
+pyautogui.PAUSE = 2
+
+# abrir a ferramenta/o sistema/o programa
+pyautogui.press("win")
+pyautogui.write("login.xlsx")
+pyautogui.press("backspace")
+pyautogui.press("enter")
+# preencher o login
+pyautogui.click(x=500, y=186)
+pyautogui.write("lira")
+
+# preencher a senha
+pyautogui.click(x=511, y=225)
+pyautogui.write("senha")
+
+# clicar em fazer login
+pyautogui.click(x=491, y=347)
+
+# Para descobrir a posiçãop dos campos na tela (posição do mouse), utilize o seguinte comando:  
+import time
+time.sleep(3)
+pyautogui.position()
+
+
+
+
+
+
+

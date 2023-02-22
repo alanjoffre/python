@@ -1,0 +1,20 @@
+Requisitos necessários para rodar o programa em sua máquina:
+
+-Python
+-SQLite
+
+No youtube tem o procedimento!
+
+No repositório do projeto, através do VSCODE, acesse o terminal e instale:
+
+biblioteca do Tkinter
+pip install tk
+
+biblioteca do tkcalendar
+pip instal tkcalendar
+
+No VSCODE, acesse o diretório e abra/execute os arquivos:
+
+banco.py
+main.py
+view.py
