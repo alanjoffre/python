@@ -14,7 +14,6 @@ yf.pdr_override()
 
 st.sidebar.title('Menu')
 
-
 # Lista das empresas - ticket b3
 Empresas = ['PETR4.SA', 'AMER3.SA']
 Selecao = st.sidebar.selectbox('Selecione a empresa:', Empresas)
