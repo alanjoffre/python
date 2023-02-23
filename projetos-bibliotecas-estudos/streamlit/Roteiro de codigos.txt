@@ -19,8 +19,14 @@ activate
 cd..
 cd..
 
-# Instalar o ambiente
+# Instalar as seguintes bibliotecas
 pip install streamlit
+pip install pandas
+pip install pandas-datareader
+pip install numpy
+pip install yfinance
+pip install plotly
+pip install DateTime
 
 # Atualize o pip no seu ambiente
 pip install --upgrade pip
