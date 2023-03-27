@@ -1,0 +1,47 @@
+Roterio de instalação:
+
+# Site para dúvidas de instalação
+https://docs.streamlit.io/library/get-started/installation
+
+# Instalar o virtualenv
+pip install virtualenv
+
+# Atualizar o pip
+pip install --upgrade pip
+
+# Criar o Ambiente virtual
+python -m venv AmbienteVirtual
+
+# Acessar a pasta Scritps e ativar o ambiente
+activate
+
+# Volta 2 pastas pelo comando 
+cd..
+cd..
+
+# Instalar as seguintes bibliotecas
+pip install streamlit
+pip install pandas
+pip install pandas-datareader
+pip install numpy
+pip install yfinance
+pip install plotly
+pip install DateTime
+
+# Atualize o pip no seu ambiente
+pip install --upgrade pip
+
+# Veriricar o streamlit
+streamlit hello
+
+# desligar o servidor
+crtl + c
+
+# Limpar o ambiente do windowns
+cls
+
+# Verificar arquivos dentro da pasta
+dir
+
+# Ligar nosso servidor
+streamlit run app.py
