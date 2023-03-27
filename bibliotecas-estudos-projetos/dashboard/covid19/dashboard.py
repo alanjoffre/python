@@ -1,8 +1,9 @@
 import dash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import html
 from dash.dependencies import Input, Output, ClientsideFunction
+import dash_core_components as dcc
 import dash_bootstrap_components as dbc
+
 import plotly.express as px
 import plotly.graph_objects as go
 
@@ -10,32 +11,36 @@ import numpy as np
 import pandas as pd
 import json
 
-CENTER_LAT, CENTER_LON = -14.272572694355336, -51.25567404158474
+# =====================================================================
+
+#Ler o arquivo csv
+#df = pd.read_csv("D:/Github/python/bibliotecas-estudos-projetos/dashboard/covid19/covid-2023.csv", sep=";")
+
+#Seleção dos dados
+#df_states = df[(~df["estado"].isna()) & (df["codmun"].isna())]
+#df_brasil = df[df["regiao"] == "Brasil"]
+
+#Salvando a seleção em um novo arquivo
+#df_states.to_csv("df_states.csv")
+#df_brasil.to_csv("df_brasil.csv")
 
 # =====================================================================
-# Data Generation
-# df = pd.read_csv("HIST_PAINEL_COVIDBR_13mai2021.csv", sep=";")
-# df_states = df[(~df["estado"].isna()) & (df["codmun"].isna())]
-# df_brasil = df[df["regiao"] == "Brasil"]
-# df_states.to_csv("df_states.csv")
-# df_brasil.to_csv("df_brasil.csv")
 
-# =====================================================================
-# Data Load
-df_states = pd.read_csv("df_states.csv")
-df_brasil = pd.read_csv("df_brasil.csv")
+df_states = pd.read_csv("D:/Github/python/bibliotecas-estudos-projetos/dashboard/covid19/df_states.csv")
+df_brasil = pd.read_csv("D:/Github/python/bibliotecas-estudos-projetos/dashboard/covid19/df_brasil.csv")
 
-token = open(".mapbox_token").read()
-brazil_states = json.load(open("geojson/brazil_geo.json", "r"))
+token = open("D:/Github/python/bibliotecas-estudos-projetos/dashboard/covid19/.mapbox_token").read()
+brazil_states = json.load(open("D:/Github/python/bibliotecas-estudos-projetos/dashboard/covid19/geojson/brazil_geo.json", "r"))
 
 brazil_states["features"][0].keys()
 
-df_states_ = df_states[df_states["data"] == "2020-05-13"]
+df_states_ = df_states[df_states["data"] == "2023-03-20"]
 select_columns = {"casosAcumulado": "Casos Acumulados", 
                 "casosNovos": "Novos Casos", 
                 "obitosAcumulado": "Óbitos Totais",
                 "obitosNovos": "Óbitos por dia"}
 
+# =====================================================================
 
 # =====================================================================
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.CYBORG])
@@ -155,7 +160,7 @@ app.layout = dbc.Container(
                             style={'height': '100vh', 'margin-right': '10px'})],
                     ),
                 ], md=7),
-            ], no_gutters=True)
+            ],class_name='g-0')
     ], fluid=True, 
 )
 
