@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Funções - Argumentoe e Parametros
+# Funções - Argumentos e Parâmetros
 
 def about(versao, autor):
     print('=' * 20)
