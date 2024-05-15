@@ -19,8 +19,8 @@ print('Exponenciação', exponenciacao)
 modulo = 55 % 2  # resto da divisão
 print('Módulo', modulo)
 
-print(10 % 8 == 0)
+print(10 % 8 == 0) # 10 é divisivel por 8? Não, pois o resto não é igual a ZERO: Resultado = False
 print(16 % 8 == 0)
-print(10 % 2 == 0)
-print(15 % 2 == 0)
+print(10 % 2 == 0) # 10 é divisivel por 2? Sim pois o resto é igual a ZERO: Resultado = True
+print(15 % 2 == 0) 
 print(16 % 2 == 0)
