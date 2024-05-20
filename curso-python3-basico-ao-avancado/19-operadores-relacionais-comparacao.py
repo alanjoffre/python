@@ -15,3 +15,8 @@ menor_ou_igual = 2 <= 2
 igual = 'a' == 'a'
 diferente = 'a' != 'b'
 print('Olha meu print aqui')
+
+# comando: python -i 19-operadores-relacionais-comparacao.py
+# entra no shell interativo do python e como mencionou o programa, passa acessar os resultados.  
+# comando: maior
+# o resultado obtido será: True
