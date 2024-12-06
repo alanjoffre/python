@@ -1,0 +1,19 @@
+Abra o VS Code e navegue até a pasta do seu projeto.
+Abra o terminal integrado em VS Code:
+Você pode fazer isso clicando em Terminal no menu superior e depois em Novo Terminal, ou usando o atalho de teclado Ctrl+Shift+ (Windows/Linux) ou Cmd+Shift+ (macOS).
+Crie o ambiente virtual:
+
+Digite o comando abaixo no terminal:
+python -m venv nome_do_ambiente
+
+Substitua nome_do_ambiente pelo nome que você deseja dar ao seu ambiente virtual.
+
+Ative o ambiente virtual:
+nome_do_ambiente\Scripts\activate
+
+Instale as dependências necessárias (se houver):
+
+Depois de ativar o ambiente, você pode instalar os pacotes necessários usando pip. Por exemplo:
+
+Instale os pacotes listados em requirements.txt. Digite o seguinte comando no terminal:
+pip install -r requirements.txt
